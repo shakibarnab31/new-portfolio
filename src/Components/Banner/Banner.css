@@ -1,0 +1,17 @@
+
+.banner{
+    min-height: 100vh;
+    background-color:rgb(8, 7, 7);
+}
+.banner-logo-content{
+    min-height: 850px;
+}
+.banner-logo{
+     border-radius: 50%;
+     border: 8px solid rgb(129, 124, 124);
+     width:65%;
+}
+.banner-info{
+    color:goldenrod;
+    font-weight: 900;
+}

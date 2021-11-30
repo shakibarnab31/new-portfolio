@@ -1,0 +1,36 @@
+.contact{
+    background-color:rgb(8, 7, 7);
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.contact-input{
+    background-color: rgb(46, 44, 44);
+    border-radius: 25px;
+    color: white;
+}
+.contact-title2{
+    font-size: 60px;
+    font-weight: 900;
+    color: goldenrod;
+}
+.contact-title1{
+    font-size: 60px;
+    font-weight: 900;
+    color:white;
+}
+.contact-title{
+    /* padding-top: 100px; */
+    padding-bottom: 70px;
+}
+.contact-button{
+    background-color: goldenrod;
+    padding:10px
+}
+.contact-info{
+    display: flex;
+    min-height: 20px;
+    align-items:calc(top);
+    margin-top: 25px;
+   
+    
+}
