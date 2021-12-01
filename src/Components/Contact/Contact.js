@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Form, Row, Button } from 'react-bootstrap';
 import './Contact.css'
 import emailjs from 'emailjs-com';
 import { HiMailOpen, HiLocationMarker, HiPhone } from "react-icons/hi";
 import { FaPhoneSquareAlt } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Contact = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     const sendEmail = e => {
         e.preventDefault();
@@ -25,7 +30,7 @@ const Contact = () => {
             <Container>
 
                 <Row className="gy-5">
-                    <Col sm={12} md={4}>
+                    <Col sm={12} md={4} data-aos="fade-right" data-aos-duration="1500">
                         <div className="text-start text-white">
                             <h2>DON'T BE SHY</h2>
                             <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
@@ -60,7 +65,7 @@ const Contact = () => {
                         </div>
 
                     </Col>
-                    <Col sm={12} md={8}>
+                    <Col sm={12} md={8} data-aos="zoom-in" data-aos-duration="1500">
                         <Form onSubmit={sendEmail} className="mx-2">
                             <Row className="mb-4">
                                 <Form.Group as={Col}>

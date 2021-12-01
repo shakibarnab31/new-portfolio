@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row, Button } from 'react-bootstrap';
 import './Projects.css'
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Projects = () => {
     const [projects, setProjects] = useState([]);
 
@@ -9,6 +11,10 @@ const Projects = () => {
         fetch('./fakedata.json')
             .then(res => res.json())
             .then(data => setProjects(data))
+    }, [])
+
+    useEffect(() => {
+        AOS.init();
     }, [])
 
     return (
@@ -20,7 +26,7 @@ const Projects = () => {
                 <Row className="gy-5">
                     {projects.map(project =>
                         <Col sm={12} md={4} key={project.id}>
-                            <Card className=" project-card">
+                            <Card data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" className=" project-card">
                                 <div className="card-img">
                                     <Card.Img variant="top" src={project.image1} className=" w-100 " />
                                 </div>

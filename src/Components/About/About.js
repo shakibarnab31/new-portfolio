@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import about from '../../images/about-pic.png'
 import './About.css'
 import { FaUser, FaGift, FaMapMarkerAlt, FaSchool, FaEnvelope, FaCalendarAlt, FaBookReader, FaPhoneSquareAlt, FaGlobeAsia, FaFacebook, FaWhatsapp, FaInstagram } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const About = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <div id="about" className="about">
             <div>
-                <h1 className=" contact-title1 mb-5">ABOUT <span className="contact-title2">ME</span></h1>
+                <h1 data-aos="fade-right" data-aos-duration="1500" className=" contact-title1 mb-5">ABOUT <span className="contact-title2">ME</span></h1>
             </div>
             <Container className="about-container p-5">
                 <Row className="gy-5">
                     <Col sm={12} md={4}>
-                        <img src={about} className="img-fluid" alt="" />
+                        <img data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out" src={about} className="img-fluid" alt="" />
                     </Col>
-                    <Col sm={12} md={8} className="px-4">
+                    <Col sm={12} md={8} className="px-4" data-aos="flip-right" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
 
                         <div className="text-start text-white">
                             <h4 className="about-info my-4"><FaUser size={30} style={{ fill: 'goldenrod' }} /> <span className="ms-3">PERSONAL INFO</span> </h4>
