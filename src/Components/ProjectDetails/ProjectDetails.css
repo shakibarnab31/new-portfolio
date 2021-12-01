@@ -1,0 +1,48 @@
+
+.project-details{
+    background-color:rgb(8, 7, 7);
+    padding-top: 50px;
+}
+.project-details h2{
+    color:goldenrod;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+.pd-image{
+    width: 350px;
+    height: 350px;
+    overflow-y: scroll;
+  
+}
+.pd-image::-webkit-scrollbar {
+    display: none;
+  }
+.technology{
+    border: 1px solid goldenrod;
+    list-style-type: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.features{
+    background-color: rgb(27, 27, 29);
+    border-radius: 10px;
+ }
+ 
+ .features h3{
+     color: goldenrod;
+     font-weight: 900;
+     margin-bottom: 20px;
+ }
+ .code-link li{
+    list-style-type: none;
+    margin-right: 30px;
+ }
+ .link-btn{
+     background-color:rgb(199, 8, 46);
+     border:2px solid goldenrod;
+     color:white;
+ }
