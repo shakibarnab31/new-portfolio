@@ -3,13 +3,7 @@
     background-color:rgb(8, 7, 7);
     padding-top: 100px;
 }
-/* .card-img{
-    height: 300px;
-    overflow-y: scroll;
-} */
-/* .card-img::-webkit-scrollbar {
-    display: none;
-} */
+
 
 .project-card {
     border: none !important;
@@ -21,29 +15,5 @@
   .card-img {
     max-width: 450px;
     max-height: 450px;
-    object-fit: cover;
-    
   }
-  /* .project-card .card-body {
-    position: absolute;
-    bottom: 0;
-    
-    background-image: linear-gradient(
-      to bottom,
-    goldenrod,
-    goldenrod
-    );
-    
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    transform: translateY(200px);
-    transition: all 0.5s Ease;
-    opacity: 0;
-  } */
-  /* .project-card:hover .card-body {
-    transform: translateY(0);
-    opacity: .8;
-   
-    
-  } */
+  

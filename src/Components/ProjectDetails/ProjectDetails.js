@@ -4,7 +4,7 @@ import { useParams } from 'react-router';
 import './ProjectDetails.css'
 
 const ProjectDetails = () => {
-    const [projectDetails, setProjectDetails] = useState();
+    const [projectDetails, setProjectDetails] = useState([]);
 
     const { projectId } = useParams();
     console.log(projectId)
@@ -14,9 +14,9 @@ const ProjectDetails = () => {
             .then(data => setProjectDetails(data))
 
     }, []);
-    // console.log(projectDetails)
-    // const found = projectDetails?.filter(pd => pd?.id == projectId)
-    // console.log(found)
+    console.log(projectDetails)
+    const found = projectDetails?.filter(pd => pd?.id == projectId)
+    console.log(found)
     return (
         <div>
             <Container>
@@ -24,7 +24,7 @@ const ProjectDetails = () => {
                     <Col sm={12} md={12}>
                         <Row>
                             <Col sm={12} md={4}>
-                                {/* <img src={found[0]?.image1} alt="" /> */}
+                                <img src={found[0]?.image1} alt="" />
                             </Col>
                             <Col sm={12} md={4}>
 

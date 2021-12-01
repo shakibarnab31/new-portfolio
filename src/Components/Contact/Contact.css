@@ -19,7 +19,6 @@
     color:white;
 }
 .contact-title{
-    /* padding-top: 100px; */
     padding-bottom: 70px;
 }
 .contact-button{
@@ -29,7 +28,7 @@
 .contact-info{
     display: flex;
     min-height: 20px;
-    align-items:calc(top);
+    align-items:center;
     margin-top: 25px;
    
     
