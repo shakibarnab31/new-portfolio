@@ -6,8 +6,11 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
+import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import ProjectDetails from "./Components/ProjectDetails/ProjectDetails";
+import Projects from "./Components/Projects/Projects";
 
 function App() {
   return (
@@ -19,6 +22,15 @@ function App() {
           </Route>
           <Route path="/home">
             <Home></Home>
+          </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
+          <Route path="/projects-page">
+            <Projects></Projects>
+          </Route>
+          <Route path="/contact-page">
+            <Contact></Contact>
           </Route>
           <Route path="/projectDetails/:projectId">
             <ProjectDetails></ProjectDetails>

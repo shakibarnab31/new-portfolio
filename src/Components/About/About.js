@@ -5,12 +5,12 @@ import './About.css'
 import { FaUser, FaGift, FaMapMarkerAlt, FaSchool, FaEnvelope, FaCalendarAlt, FaBookReader, FaPhoneSquareAlt, FaGlobeAsia, FaFacebook, FaWhatsapp, FaInstagram } from "react-icons/fa";
 const About = () => {
     return (
-        <div id="about-page" className="about">
+        <div id="about" className="about">
             <div>
                 <h1 className=" contact-title1 mb-5">ABOUT <span className="contact-title2">ME</span></h1>
             </div>
             <Container className="about-container p-5">
-                <Row>
+                <Row className="gy-5">
                     <Col sm={12} md={4}>
                         <img src={about} className="img-fluid" alt="" />
                     </Col>

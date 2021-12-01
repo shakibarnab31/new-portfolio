@@ -8,10 +8,14 @@
 }
 .banner-logo{
      border-radius: 50%;
-     border: 8px solid rgb(129, 124, 124);
+     border: 10px solid rgb(129, 124, 124);
+     box-shadow: 0 0 20px 2px rgb(129, 124, 124);
      width:65%;
 }
 .banner-info{
     color:goldenrod;
     font-weight: 900;
+}
+.resume{
+    background-color: crimson;
 }

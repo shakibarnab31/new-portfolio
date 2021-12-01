@@ -17,7 +17,7 @@ const ProjectDetails = () => {
     }, []);
 
     const found = projectDetails?.filter(pd => pd?.id == projectId)
-    console.log(found)
+
     return (
         <div className="project-details">
             <Navigation></Navigation>
@@ -25,7 +25,7 @@ const ProjectDetails = () => {
             <Container>
                 <Row>
                     <Col sm={12} md={12}>
-                        <Row>
+                        <Row className="gy-5">
                             <Col sm={12} md={4}>
                                 <div className="pd-image">
                                     <img className="img-fluid" src={found[0]?.image1} alt="" />

@@ -24,7 +24,7 @@ const Contact = () => {
             </div>
             <Container>
 
-                <Row>
+                <Row className="gy-5">
                     <Col sm={12} md={4}>
                         <div className="text-start text-white">
                             <h2>DON'T BE SHY</h2>
@@ -66,8 +66,6 @@ const Contact = () => {
                                 <Form.Group as={Col}>
                                     <Form.Control className="rounded-pill contact-input border-0 p-2" type="text" placeholder="Enter Name" name="name" />
                                 </Form.Group>
-                                {/* <input className="contact-input border-0 p-2" type="text" name="name" id="" placeholder="Enter name" />
-                                <input className="contact-input border-0 p-2" type="email" name="email" id="" placeholder="Enter email" /> */}
                                 <Form.Group as={Col} >
                                     <Form.Control type="email" className="rounded-pill contact-input border-0 p-2" placeholder="Enter email" name="email" />
                                 </Form.Group>

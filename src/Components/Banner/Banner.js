@@ -28,7 +28,7 @@ const Banner = () => {
                                 />
                             </h1>
                             <p className="text-white">I design and develop spectacular and modern website using different technologies.Please visit my portfolio projects for explicit view of me</p>
-                            <a href="https://drive.google.com/uc?id=18MH87yyfxnTBg9-h6g9uUk2_hupeDicW&export=download"><Button>Download Resume</Button>
+                            <a href="https://drive.google.com/uc?id=18MH87yyfxnTBg9-h6g9uUk2_hupeDicW&export=download"><Button className="bg-info border-0">Download Resume</Button>
                             </a>
 
 

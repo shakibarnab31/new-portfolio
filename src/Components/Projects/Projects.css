@@ -10,11 +10,20 @@
     border-radius: none !important;
     position: relative !important;
     overflow: hidden !important;
+    max-height: 450px;
     
   }
   .card-img {
     max-width: 450px;
     max-height: 450px;
   }
-  
+  .project-body{
+    display: none;
+  }
+  .project-card:hover .project-body{
+    display: block;
+    transition: 3s;
+
+    transform: translateY(-220px);
+  }
   

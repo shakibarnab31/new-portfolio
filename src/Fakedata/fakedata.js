@@ -19,7 +19,7 @@ const fakedata = [
     {
         id: 2,
         name: 'Travele Tour Agency',
-        description: 'It is travel booking website.Authentication system has been implemented.Users can choose his best travel packages and book it. He also can see his ordered and manage it.Admin can ',
+        description: 'It is travel booking website.Authentication system has been implemented.Users can choose his best travel packages and book it. He also can see his ordered and manage it.',
         Technologies: ['Bootstrap', 'Aos', ' React', 'React router', 'Heroku', 'Firebase', 'Node JS', 'Node Express', 'MongoDB'
         ],
         Feature1: 'Designed home page with banner, Packages, additional services, client testimonial, and footer.',
@@ -36,7 +36,7 @@ const fakedata = [
     {
         id: 3,
         name: 'Medicare Hospital Ltd',
-        description: 'It is Hospital website.Users can route to different pages from nav bar. Users can also see all doctors and appointment system.Authentication system has been implemented',
+        description: 'It is Hospital website.Users can route to different pages from nav bar.Users can also see all doctors and appointment.Authentication system has been implemented',
         Technologies: ['JS', 'Aos', 'React', 'React router', 'Firebase', 'Bootstrap'
         ],
         Feature1: 'On the home page, users can see main services, lab services, and patient testimonials.',
