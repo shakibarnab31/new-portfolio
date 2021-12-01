@@ -5,19 +5,18 @@ import './ProjectDetails.css'
 
 const ProjectDetails = () => {
     const [projectDetails, setProjectDetails] = useState();
-    const [isLoaing, setIsLoading] = useState(true)
+
     const { projectId } = useParams();
     console.log(projectId)
     useEffect(() => {
-        setIsLoading(true)
         fetch('/fakedata.json')
             .then(res => res.json())
             .then(data => setProjectDetails(data))
-            .finally(() => setIsLoading(false))
+
     }, []);
-    console.log(projectDetails)
-    const found = projectDetails?.filter(pd => pd?.id == projectId)
-    console.log(found)
+    // console.log(projectDetails)
+    // const found = projectDetails?.filter(pd => pd?.id == projectId)
+    // console.log(found)
     return (
         <div>
             <Container>
@@ -25,7 +24,7 @@ const ProjectDetails = () => {
                     <Col sm={12} md={12}>
                         <Row>
                             <Col sm={12} md={4}>
-                                <img src={found[0]?.image1} alt="" />
+                                {/* <img src={found[0]?.image1} alt="" /> */}
                             </Col>
                             <Col sm={12} md={4}>
 
